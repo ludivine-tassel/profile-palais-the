@@ -1,0 +1,145 @@
+
+
+body{
+	color: black;
+	text-justify:center;
+	font-family: 'Raleway', sans-serif;
+}
+h1{
+	color: 	#FF4500;
+	text-justify:center;
+}
+h2{
+	color: #FF7F50;
+	text-align:center;
+	}
+a{
+	text-decoration: none;
+	color: grey;
+}
+a:hover{
+	color: #FF7F50;
+}
+
+div{
+	color: black;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 5px
+}
+
+img{
+width: 200px;
+height:200px;
+border-radius: 100px
+}
+
+
+.container{
+	margin:auto;
+	padding: 40px;
+	width: 1100px;
+	display:flex;
+	box-shadow: 10px 10px 8px rgba(128,128,128,0.4);
+	background-color: #E9E9E9;
+	justify-content:space-between;
+	align-items: center;
+	text-align: justify;
+}
+
+#content-center{
+	margin:auto;
+	padding: 40px;
+	width: 1100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	background-color: #FF7F50;
+	box-shadow: 10px 10px 8px rgba(128,128,128,0.4);
+	justify-content:space-between
+}
+
+#boxheader-left{
+	width: 250px;
+	margin-left: 85px;
+	background-color: #E9E9E9;
+}
+
+#boxheader-right{
+	width: 650px;
+	background-color: #E9E9E9;
+}
+
+#box-left{
+	width: 350px;
+	background-color: white;
+	box-shadow: 10px 10px 8px rgba(128,128,128,0.4);
+}
+
+
+#box-right{
+	width: 650px;
+	background-color: white;
+	box-shadow: 10px 10px 8px rgba(128,128,128,0.4);
+}
+
+.footer{
+	margin:auto;
+	padding: 40px;
+	width: 1100px;
+	background-color: #DCDCDC;
+	box-shadow: 10px 10px 8px rgba(128,128,128,0.4);
+	display: flex;
+	justify-content: space-between;
+}
+
+#boxfooter-left{
+	width: 350px;
+	background-color: white;
+	box-shadow: 10px 10px 8px rgba(128,128,128,0.4);
+	margin-left: 80px;
+}
+
+
+#boxfooter-right{
+	width: 450px;
+	background-color: white;
+	box-shadow: 10px 10px 8px rgba(128,128,128,0.4);
+	text-align: center;
+	margin-right: 80px;
+}
+
+.list-inline {
+  list-style: none; /* kill the bullet points */
+  padding-left: 0px; /* kill remaining padding left */
+}
+
+.list-inline > li {
+  display: inline; /* change list item behavior to inline */
+  padding: 0px 60px; /* add som left/right padding between list items */
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+    .container, #content-center, .footer {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+    .container, #content-center, .footer {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+    .container, #content-center, .footer, #boxheader-left, #boxheader-right, #box-left, #box-right, #boxfooter-left, #boxfooter-right {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+}
+
